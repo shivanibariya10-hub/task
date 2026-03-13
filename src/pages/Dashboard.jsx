@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import "./dashboard.css";
+import "./Dashboard.css";
 import Projects from "../pages/Projects";
 import Calendar from "../pages/Calendar";
 import Tasks from "../pages/Tasks";
