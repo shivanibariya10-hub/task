@@ -1,0 +1,54 @@
+.table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table-container th {
+  background: #f4f4f4;
+  color: #2c3e50;
+}
+
+select.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+select.status.pending { background: #f1c40f; }
+select.status.inprogress { background: #3498db; }
+select.status.completed { background: #2ecc71; }
+
+.edit-btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

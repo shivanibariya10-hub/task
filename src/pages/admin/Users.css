@@ -1,0 +1,117 @@
+.users-container {
+  padding: 30px;
+  background: #f4f7fe;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.users-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  font-weight: 600;
+}
+
+.add-user {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-user input,
+.add-user select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.add-user button {
+  padding: 10px 15px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.users-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+  background: #f1f5f9;
+}
+
+button {
+  margin: 3px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.role.Admin {
+  color: #9333ea;
+  font-weight: bold;
+}
+
+.role.User {
+  color: #0ea5e9;
+  font-weight: bold;
+}
+
+.status.Active {
+  color: green;
+  font-weight: bold;
+}
+
+.status.Blocked {
+  color: red;
+  font-weight: bold;
+}
+
+.notifications {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}

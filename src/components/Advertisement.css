@@ -1,0 +1,75 @@
+.app-ad-section {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #cbd5f5;
+  padding: 60px 40px 20px;
+  margin-top: 80px;
+}
+
+.ad-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.ad-box h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.ad-box h4 {
+  color: #e5e7eb;
+  margin-bottom: 12px;
+}
+
+.ad-box p,
+.ad-box li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+.ad-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ad-box ul li::before {
+  content: "✔ ";
+  color: #38bdf8;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.subscribe-box button {
+  padding: 10px 16px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.subscribe-box button:hover {
+  background: #0ea5e9;
+}
+
+.ad-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+}

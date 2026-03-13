@@ -1,0 +1,76 @@
+.dashboard-preview {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.dashboard-text {
+  flex: 1;
+}
+
+.dashboard-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.dashboard-text p {
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.dashboard-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.dashboard-text li {
+  margin-bottom: 10px;
+  color: #334155;
+  font-size: 15px;
+}
+
+.preview-btn {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.preview-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.dashboard-image {
+  flex: 1;
+  text-align: center;
+}
+
+.dashboard-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.dashboard-image img:hover {
+  transform: scale(1.03);
+}

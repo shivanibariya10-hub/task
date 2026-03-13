@@ -1,0 +1,180 @@
+/* Hero Section */
+.contact-hero {
+ background: url('/hero-bg.jpg') center/cover no-repeat;
+
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  position: relative;
+}
+.contact-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 1;
+}
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.info-box {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s;
+}
+.info-box:hover {
+  transform: translateY(-10px);
+}
+.info-box i {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #00bfff;
+}
+.info-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.info-box p {
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Contact Form Section */
+/* Contact Form Section */
+.contact-form-section {
+  padding: 100px 20px;
+  background: #f4efe6;  /* cream background like image */
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-section form {
+  background: #f4efe6;
+  max-width: 500px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+/* Underline Inputs */
+.contact-form-section input,
+.contact-form-section textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 12px 5px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+/* Black Rounded Button */
+.contact-form-section button {
+  background: #000;
+  color: #fff;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form-section button:hover {
+  background: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Toast Notification */
+.toast {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {opacity: 0; transform: translateX(-50%) translateY(20px);}
+  10% {opacity: 1; transform: translateX(-50%) translateY(0);}
+  90% {opacity: 1; transform: translateX(-50%) translateY(0);}
+  100% {opacity: 0; transform: translateX(-50%) translateY(20px);}
+}

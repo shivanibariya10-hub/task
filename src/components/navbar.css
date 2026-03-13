@@ -1,0 +1,299 @@
+/* ===== NAVBAR MAIN ===== */
+
+.taskpro-navbar {
+  background: #ffffff;
+  margin: 15px auto;
+  max-width: 1200px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 6px 0;
+}
+
+/* ===== INNER ===== */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b !important;
+  text-decoration: none;
+}
+
+.logo-icon {
+  background: #3b82f6;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-weight: 700;
+}
+
+/* ===== LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin-right: 20px;
+}
+
+.nav-links .nav-link {
+  color: #475569 !important;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #3b82f6;
+  transition: 0.3s ease;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-links .nav-link:hover {
+  color: #3b82f6 !important;
+}
+
+/* ===== BUTTONS ===== */
+.nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Login */
+.btn-login {
+  border-radius: 20px;
+  padding: 6px 18px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  background: #e2e8f0;
+}
+
+/* Signup */
+.btn-signup {
+  border-radius: 20px;
+  padding: 6px 20px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(59, 130, 246, 0.5);
+}
+
+/* Logout */
+.btn-logout {
+  border-radius: 20px;
+  padding: 6px 20px;
+  background: #ef4444;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .taskpro-navbar {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .nav-links {
+    margin-top: 12px;
+    gap: 12px;
+  }
+
+  .nav-actions {
+    margin-top: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ===== NAVBAR FIXED FLOATING STYLE ===== */
+.taskpro-navbar {
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+
+  position: relative;   /* 🔥 FIX */
+  z-index: 2000;        /* 🔥 FIX */
+  width: calc(100% - 40px);
+}
+
+
+
+
+
+
+
+
+
+/* ===== FORCE OVERRIDE BOOTSTRAP ===== */
+.navbar.taskpro-navbar {
+  background-color: #ffffff !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18) !important;
+  margin: 20px auto !important;
+  max-width: 1200px !important;
+  padding: 8px 0 !important;
+}
+
+/* Remove default bootstrap dark bg */
+.navbar-dark,
+.navbar-light {
+  background-color: transparent !important;
+}
+
+/* Logo */
+.navbar.taskpro-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b !important;
+}
+
+.logo-icon {
+  background: #2563eb;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Links */
+.navbar.taskpro-navbar .nav-link {
+  color: #475569 !important;
+  font-weight: 500;
+  margin-right: 18px;
+}
+
+.navbar.taskpro-navbar .nav-link:hover {
+  color: #2563eb !important;
+}
+
+/* Buttons */
+.navbar.taskpro-navbar .btn {
+  border-radius: 20px !important;
+  padding: 6px 18px !important;
+}
+
+.btn-signup {
+  background: linear-gradient(135deg, #2563eb, #3b82f6) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.nav-links li:hover {
+  color: var(--primary);
+}
+
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.dark-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.dark-btn:hover {
+  opacity: 0.85;
+}

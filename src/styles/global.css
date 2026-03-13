@@ -1,0 +1,29 @@
+:root {
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-color: #0f172a;
+  --muted-text: #475569;
+  --primary: #2563eb;
+  --border-color: #e5e7eb;
+}
+
+body.dark {
+  --bg-color: #020617;
+  --card-bg: #0f172a;
+  --text-color: #e5e7eb;
+  --muted-text: #94a3b8;
+  --primary: #38bdf8;
+  --border-color: #1e293b;
+}
+
+
+
+
+
+
+
+
+/* TOP ya BOTTOM dono chalega */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for all devices */
+}
