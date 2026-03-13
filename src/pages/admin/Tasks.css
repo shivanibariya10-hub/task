@@ -155,10 +155,8 @@ h2 {
 .status.Pending {
   background: #f59e0b;
 }
-
-.status["In Progress"],
-.status.InProgress {
-  background: #3b82f6;
+.status.in-progress{
+  background: orange;
 }
 
 .status.Completed {
